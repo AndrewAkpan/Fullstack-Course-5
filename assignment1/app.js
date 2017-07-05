@@ -1,25 +1,29 @@
 (function (){
   'use strict';
 
-  angular.module('LunchCheck', [])
-  .controller('LunchCheckController', LunchCheckController);
+  angular.module('TooMuch', [])
+  .controller('TooMuchController', TooMuchController);
 
 LunchCheckController.$inject = ['$scope'];
-function LunchCheckController($scope){
-     $scope.message = "";
-     $scope.displayMsg = function (){
-        if ( $scope.foodlist === "" ){
-            $scope.message = "Please enter data first";
+function TooMuchController($scope)
+{
+     $scope.message = "Enter data";
+     $scope.CheckMuch = function ()
+      {
+        var input= $scope.userInput.split(",");
+
+        if ( $scope.userInput === "" || $scope.userInput === " "  ){
+            return $scope.message = "Please enter data first";
         }
-        var f_list= $scope.foodlist.split(",");
-        if ( f_list.length <= 3 && f_list.length > 0){
-          $scope.message = "Enjoy!";
+        
+        if ( input.length <= 3 && input.length > 0){
+          return $scope.message = "Enjoy!";
         }
-        if ( f_list.length >3){
-          $scope.message = "Too much!";
+        if ( input.length >3){
+          return $scope.message = "Too much!";
         }
-       return $scope.message;
-    };
+       
+     };
 }
 
 })();
