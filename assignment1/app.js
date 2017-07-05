@@ -15,11 +15,13 @@ function TooMuchController($scope)
 
         length= CheckSpace(input,length);
 
-        if ( $scope.userInput === "" || $scope.userInput === " "  ){
+        if ( length<1 )
+        {
             return $scope.message = "Please enter data first";
         }
         
-        if ( length <= 3 && length > 0){
+        if ( length <= 3 && length > 0)
+        {
           return $scope.message = "Enjoy!";
         }
         if ( length >3){
