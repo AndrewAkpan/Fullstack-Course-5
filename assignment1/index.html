@@ -1,5 +1,5 @@
 <!doctype html>
-<html ng-app = 'LunchCheck' >
+<html ng-app = 'TooMuch' >
   <head>
     
     <title>Lunch Checker</title>
@@ -29,12 +29,12 @@
       }
     </style>
   </head>
-<body ng-controller='LunchCheckController'>
+<body ng-controller='TooMuchController'>
    <div class="container">
      <h1>Lunch Checker </h1>
 
          <div class="form-group">
-             <input id="lunch-menu" type="text" ng-model = "foodlist"
+             <input id="lunch-menu" type="text" ng-model = "userInput"
              placeholder="list comma separated dishes you usually have for lunch"
              class="form-control">
              
@@ -44,7 +44,7 @@
            {{message}}
          </div>
          <div class="form-group">
-             <button ng-click = 'displayMsg()' class="btn btn-default">Check If Too Much</button>
+             <button ng-enter='CheckMuch()' ng-click = 'CheckMuch()' class="btn btn-default">Check If Too Much</button>
          </div>
 
    </div>
