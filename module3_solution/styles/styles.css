@@ -84,7 +84,12 @@ font-style: italic;
 .error {
   color: red;
   font-size: 30px;
+  
+}
+.error col-xs-12 ng-scope
+{
   padding: 0px;
+  text-transform: uppercase;
 }
 
 table, th , td  {
