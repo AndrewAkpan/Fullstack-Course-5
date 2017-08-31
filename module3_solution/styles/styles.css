@@ -18,7 +18,7 @@ body
 {
   background-color: #eab5b5;
   color: white;
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Rubik', sans-serif;
 
 
 }
@@ -84,6 +84,8 @@ font-style: italic;
 .error {
   color: red;
   font-size: 30px;
+  padding-left: 0px;
+  font-family: 'Bungee';
   
 }
 .error col-xs-12 ng-scope
