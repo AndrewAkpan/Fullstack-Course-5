@@ -220,3 +220,7 @@ table
 .table-button:hover  {
   background-color: #337ab7;
 }
+.btn-primary {
+    color: #fff;
+    background-color: #eab5b5;
+    border-color: none;
