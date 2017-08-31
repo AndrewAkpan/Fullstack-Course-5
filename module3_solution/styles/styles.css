@@ -84,6 +84,7 @@ font-style: italic;
 .error {
   color: red;
   font-size: 30px;
+  padding: 0px;
 }
 
 table, th , td  {
