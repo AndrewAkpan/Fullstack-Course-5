@@ -242,6 +242,7 @@ table, th , td  {
   border: 1px solid grey;
   border-collapse: collapse;
   padding: 5px;
+  background-color: #eab5b5;
 }
 table 
   background-color: #eab5b5;
@@ -250,7 +251,7 @@ table
   float: none;
   margin-left: 10px;
   color: #fff;
-  background-color: none;
+  background-color: #eab5b5;
   border-color: white;
 }
 .table-button:hover  {
