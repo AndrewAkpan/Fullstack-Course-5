@@ -82,7 +82,7 @@ font-style: italic;
 }
 
 .error {
-  color: red;
+  color:#ff4a4a;
   font-size: 30px;
   padding-left: 0px;
   font-family: 'Bungee';
