@@ -3,14 +3,17 @@
   <head>
     <title>Narrow Down Your Menu Choice</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://fonts.googleapis.com/css?family=Bungee|Roboto|Rubik" rel="stylesheet">
     <link rel="stylesheet" href="styles/bootstrap.min.css">
     <link rel="stylesheet" href="styles/styles.css">
     <script src="angular.min.js"></script>
     <script src="app.js"></script>
   </head>
+  <header></header>
 <body ng-controller="NarrowItDownController as narrowItCtrl">
    <div class="container">
-    <h1>Narrow Down Your Chinese Menu Choice</h1>
+    <h1 class="titl">What's on the menu??</h1>
+    <h2 class= "subtitle">Narrow Down Your Chinese Menu Choice</h2>
 
     <div class="form-group">
       <input type="text" ng-model="narrowItCtrl.searchStr" placeholder="search term" class="form-control">
